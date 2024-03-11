@@ -1,0 +1,279 @@
+/* variables */
+:root
+{
+    /* bordes */
+    --default-borde-radius:5px;
+    
+    /* colores */
+    --color-principal: #000;
+    --color-sec: #d1d1d1;
+    --color-blanco: #fff;
+    --color-blanco-gris:#f5f5f5;
+    --color-gris-oscuro: #16171D;
+
+    /* colores boton whatsapp */
+    --co-btn-whats: #00E676;
+    --co-btn-whats-border: #71ffba;
+    --co-btn-whats-border-hover:#CCFAE4 ;
+    
+    /* fuentes */
+    --weight-bold: 600;
+    --font-size-text: 1rem;
+    --font-size-titulo: 2rem;
+
+    /* tamaños */
+    --width-full: 100%;
+    --width-almost-full:80%;
+}
+
+
+/* header */
+.header
+{
+    /* decorados */
+    background-color:var(--color-blanco);
+}
+.header__div
+{
+    /* box model */
+    min-height: 100px;
+    width: 80%;
+    margin:0px auto 0px auto;
+    padding:0px 10px 0px 10px;
+}
+.header__nav
+{
+    /* texto */
+    font-weight:var(--weight-bold);
+    font-size:var(--font-size-text);
+}
+.header__img
+{
+    /* box model */
+    width: 60px;
+
+    /* decorados */
+    cursor: pointer;
+}
+
+.boton
+{
+    /* box model */
+    min-height: 38px;
+    padding: 0px 30px 0px 30px;
+    border: 1px solid var(--color-sec);
+    
+    /* decorados */
+    background-color: inherit;
+    cursor: pointer;
+    border-radius: var(--default-borde-radius);
+    
+    /* texto */
+    font-weight: var(--weight-bold);
+}
+.boton:hover{
+    /* decorados */
+    border-color: var(--color-principal);
+    box-shadow:0px 0px 0px 1px var(--color-principal);
+}
+.header__li
+{
+    /* box model */
+    padding: 10px 16px 10px 16px;
+}
+.header__li:hover
+{
+    /* texto */
+    color:#236FF8;
+}
+
+.header__li:not(:last-child)
+{
+    /* decorados */
+    border-right: 1px solid var(--color-sec);
+}
+/* header */
+
+
+
+
+
+/* main */
+.contenedor{
+    /* box model */
+    width: var(--width-full);
+    padding: 0px 0px 0px 0px;
+
+    /* decorados */
+    /* background-color: #b8f823; */
+    
+    /* textos */
+    text-align: center;
+}
+.contenedor__seccion
+{
+    /* box model */
+    width: var(--width-full);
+    padding: 70px 0px 70px 0px;
+
+    /* decorados */
+    background-color: var(--color-blanco);
+}
+.seccion__div
+{
+    width: var(--width-almost-full);
+    padding:0px 10px 0px 10px;
+}
+.contenedor__imgppal
+{
+    /* box model */
+    width: var(--width-almost-full);;
+    padding: 0px 10px 0px 10px;
+}
+.seccion__iframe
+{
+    aspect-ratio: 16/9;
+    margin: 60px 0px 20px 0px;
+}
+
+
+.titulo
+{
+    margin-bottom: 20px;
+
+    /* decorados */
+    font-size: var(--font-size-titulo);
+    font-weight: var(--weight-bold);
+    line-height: 1.3;
+}
+
+
+.texto
+{
+    display: block;
+    margin-bottom: 20px;
+}
+.carta
+{
+    min-width: 200px;
+
+    text-align: left;
+}
+.carta__img
+{
+    aspect-ratio: 1/1;
+
+    border-radius: 10px;
+    margin: 0 0 1rem 0;
+}
+.carta__precio
+{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-violeta-boton);
+}
+
+
+
+.tarjeta__foto
+{
+    display: inline-block;
+    width: 3.75rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.tarjeta__name
+{
+    font-weight: var(--weight-bold);
+}
+.boton-fixed
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+
+    box-sizing: content-box;
+    background-color: var(--co-btn-whats);
+    font-size: 1rem;
+    
+    width: 1.9em;
+    padding: 0.8em;
+    margin: 1em;
+    border: 0.4em solid var(--co-btn-whats-border);
+    border-radius: 50%;
+
+}
+.boton-fixed:hover
+{
+    border: 0.4em solid var(--co-btn-whats-border-hover);
+}
+.boton-fixed:hover .cartel
+{
+    display: block;
+
+}
+.cartel
+{
+    display: none;
+    
+    position: absolute;
+    top: -3em;
+    right: -1.2em;
+
+    min-width: 12em;
+    padding: 0.1em 0.3em;
+
+    background-color:var(--color-gris-oscuro);
+    color: var(--color-blanco);
+    border-radius: 5px;
+
+    font-size:13px;
+    text-align: center;
+}
+/* main */
+
+
+
+
+/* footer */
+.footer__contenedor
+{
+    padding: 2.5rem 0px 2.5rem 0px;
+    background-image: linear-gradient(rgba(12,12,12, 0.5),rgba(12, 12, 12, 0.5)),  url(../assets/img/30_o_1h4oaqqhl1sk7rdt1sn011qlpt4v.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.icon
+{
+    color: var(--color-blanco);
+    background-color: var(--color-violeta-boton);
+
+    font-size: 1.5rem;
+    padding: 0.3em;
+    margin: 0em 0.3em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icon:hover
+{
+    background-color: var(--color-violeta-boton-hover);
+    box-shadow:0px 0px 0px 1px var(--color-violeta-boton-hover);
+}
+
+.list
+{
+    margin: 2rem 1rem;
+    display: inline-block;
+}
+.list:hover
+{
+    color:#236FF8;
+}
+/* https://lineadecodigo.com/html/imagen-con-enlace-en-html/ */
+/* footer */
