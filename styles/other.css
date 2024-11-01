@@ -112,3 +112,27 @@
     box-shadow: none;
     background-color: rgb(213, 213, 213);
 }
+
+
+@media (min-width:910px)
+{
+    .carta
+    {
+        flex-basis: 300px;
+    }
+}
+@media (max-width:950px){
+    :root{
+        --width-almost-full:95%;
+    }
+    .contenedor__seccion--fullscreen{
+        min-height: 0;
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__div{
+        grid-template-areas: "logo";
+        grid-template-columns: 1fr;
+    }
+}

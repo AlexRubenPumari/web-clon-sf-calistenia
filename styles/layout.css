@@ -110,10 +110,3 @@
     align-items: center;
 }
 
-@media (min-width:910px)
-{
-    .carta
-    {
-        flex-basis: 300px;
-    }
-}
