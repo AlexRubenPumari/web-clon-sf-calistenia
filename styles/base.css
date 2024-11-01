@@ -9,12 +9,12 @@
 }
 /* Mediaquerys */
 /* Cambia los colores, según el modo oscuro */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --color-primario:#f0f0f0;
         --color-secundario:#181818;
     }
-}
+} */
 /* Opcional: Cambia los colores, según el contrate */
 @media (prefers-contrast: high){
     :root{

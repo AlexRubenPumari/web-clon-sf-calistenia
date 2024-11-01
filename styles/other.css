@@ -156,7 +156,7 @@
         text-align: center;
     }
     .icono_texto:hover{
-        color: var(--color-violeta-boton);
+        color: rgb(0, 115, 255);
     }
     .icono_texto__texto{
         font-size: .95rem;
