@@ -121,7 +121,7 @@
         flex-basis: 300px;
     }
 }
-@media (max-width:950px){
+@media (max-width:870px){
     :root{
         --width-almost-full:95%;
     }
@@ -134,5 +134,39 @@
     .header__div{
         grid-template-areas: "logo";
         grid-template-columns: 1fr;
+    }
+    .header__logo{
+        place-content: center;
+    }
+    .nav_mobile{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        height: 4.8rem;
+        align-items: center;
+        justify-content: space-around;
+
+        border-top: 1px solid hsl(0, 0%, 70%, .5);
+        background-color: var(--color-blanco);
+    }
+    .icono_texto__icono{
+        display: block;
+        text-align: center;
+    }
+    .icono_texto:hover{
+        color: var(--color-violeta-boton);
+    }
+    .icono_texto__texto{
+        font-size: .95rem;
+        display: inline-block;
+        margin: .3rem 0 0;
+    }
+    .boton-fixed{
+        bottom: 4.5rem;
+    }
+    .footer{
+        margin-bottom: 4.8rem;
     }
 }
